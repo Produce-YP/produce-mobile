@@ -35,7 +35,7 @@ export default function HomeScreen(props) {
 
 
     const  onPressBuisness = item => {
-        props.navigation.navigate('Buisness');
+        props.navigation.navigate('Buisness', { item });
       };
 
     const renderBuisnesses = ({ item }) => (
