@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import { FlatList, Keyboard, ScrollView, Text, TextInput, TouchableOpacity, View, Image } from 'react-native'
 import styles from './styles';
+import { defImg } from '../../../assets/splash.png'
 export default function BuisnessScreen(props) {
   console.log('!!!', props.route.params.item.photo_url)
 
   return (
     <ScrollView style={styles.container}>
         <View style={styles.carouselContainer}>
-          <View>
-          <Image source={props.route.params.item.photo_url} />
+          <View style={styles.imageContainer}>
+          <Image style={styles.image} source={require('../../../assets/splash.png')} />
           </View>
         </View>
         <View style={styles.infoRecipeContainer}>
