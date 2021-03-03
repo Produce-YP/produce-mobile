@@ -7,12 +7,13 @@ const SCREEN_WIDTH = width < height ? width : height;
 const recipeNumColums = 2;
 // item size
 const RECIPE_ITEM_HEIGHT = 150;
-const RECIPE_ITEM_MARGIN = 20;
+const RECIPE_ITEM_MARGIN = 2;
 
 export default StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: 'orange'
     },
     formContainer: {
         flexDirection: 'row',
@@ -50,7 +51,7 @@ export default StyleSheet.create({
     },
     listContainer: {
         marginTop: 20,
-        padding: 20,
+
     },
     entityContainer: {
         marginTop: 16,
@@ -70,7 +71,8 @@ export default StyleSheet.create({
         marginTop: 20,
         width: (SCREEN_WIDTH - (recipeNumColums + 1) * RECIPE_ITEM_MARGIN) / recipeNumColums,
         height: RECIPE_ITEM_HEIGHT + 75,
-        borderColor: '#cccccc',
+        borderColor: 'black',
+        backgroundColor: 'white',
         borderWidth: 0.5,
         borderRadius: 15
       },
