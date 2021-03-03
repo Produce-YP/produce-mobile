@@ -11,9 +11,12 @@
         'https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492718105/articles/2013/09/24/burger-king-s-new-french-fries-took-ten-years-to-develop/130923-gross-burger-tease_izz59e',
         'https://aht.seriouseats.com/images/2012/02/20120221-193971-fast-food-fries-Burger-King-fries-2.jpg'
       ],
-      contact: 'Phone: (818)-861-9470' + 'Based in Los Angeles 90058',
+      contact: {
+        phone: '(818)-861-9470',
+        address: 'Based in Los Angeles 90058'
+      },
       siteUrl: 'https://www.scfcoop.southcentralfarmers.com/',
-      description: 'No minimum. Email / Delivery. Sunday deliveries only. Orders must be made on Friday prior to delivery. Invoice is sent via PayPal and must be paid on receipt. No Minimum order requirement.' + 'MAP goes here'
+      description: 'No minimum. Email / Delivery. Sunday deliveries only. Orders must be made on Friday prior to delivery. Invoice is sent via PayPal and must be paid on receipt. No Minimum order requirement.'
     },
     {
       buisnessId: 2,
@@ -27,7 +30,13 @@
         'http://images.media-allrecipes.com/userphotos/960x960/3798204.jpg',
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzui8MM6W66I29VZwVvcjpGv99JW3O1owgupc3KwB65rhAyrZ'
       ],
-      contact: 'Aaron Williams, Phone (213)627-8736, Hours: 7AM to 1PM, Email: apw@valleyproduce.com Address: Los Angeles 90021' ,
+      contact: {
+        name: 'Aaron Williams',
+        phone: '(213)627-8736',
+        hours: '7AM to 1PM',
+        email: 'apw@valleyproduce.com',
+        address: 'Los Angeles 90021'
+      },
       siteUrl: 'https://www.valleyproduce.com/',
       description: 'Contact Aaron for questions and set up an account. Ordering is done online. No minimum order requirement. Offers delivery. Schedule to be determined. Carries a wide range of fruits and vegetables as well as ready-to-eat items such pre-cut fruit and salads.'
     },
@@ -43,7 +52,13 @@
         'http://images.media-allrecipes.com/userphotos/960x960/3798204.jpg',
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzui8MM6W66I29VZwVvcjpGv99JW3O1owgupc3KwB65rhAyrZ'
       ],
-      contact: 'Reyes Phone: (213)290-8866 Address: Los Angeles 90056',
+      contact: {
+        name: 'Reyes ',
+        phone: '(213)290-8866',
+        hours: '',
+        email: '',
+        address: 'Los Angeles 90056'
+      },
       siteUrl: 'https://www.wwproduce.com/',
       description: 'Online Delivery Deliveries available 4 Days Week except Wednesday & Sundays. Minimum delivery: $250 Daily or $1,500 Weekly.'
     },

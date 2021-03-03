@@ -1,4 +1,5 @@
 import { StyleSheet, Dimensions } from 'react-native';
+import { color } from 'react-native-reanimated';
 
 const { width: viewportWidth } = Dimensions.get('window');
 
@@ -83,7 +84,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'black',
     textAlign: 'center'
+  },
+  contactInfo: {
+    flex: 1,
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
   }
+
 });
 
 export default styles;
