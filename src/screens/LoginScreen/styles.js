@@ -11,12 +11,12 @@ export default StyleSheet.create({
     logo: {
         flex: 1,
         height: 120,
-        width: 90,
         alignSelf: "center",
         margin: 30
     },
     input: {
         height: 48,
+        width: 400,
         borderRadius: 5,
         overflow: 'hidden',
         backgroundColor: 'white',
@@ -54,5 +54,10 @@ export default StyleSheet.create({
         color: "#788eec",
         fontWeight: "bold",
         fontSize: 16
+    },
+    imageBackground: {
+        flex: 1,
+        resizeMode: "cover",
+        justifyContent: "center"
     }
 })
