@@ -55,7 +55,7 @@
       contact: {
         name: 'Reyes ',
         phone: '(213)290-8866',
-        hours: '11 - 7',
+        hours: '',
         email: '',
         address: 'Los Angeles 90056'
       },

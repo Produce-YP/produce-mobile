@@ -4,13 +4,17 @@ import { firebase } from './src/firebase/config'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { LoginScreen, HomeScreen, RegistrationScreen, BuisnessScreen } from './src/screens'
+import { buisnesses } from '../produce-native/data/dataArray';
 import {decode, encode} from 'base-64'
 if (!global.btoa) {  global.btoa = encode }
 if (!global.atob) { global.atob = decode }
 
 const Stack = createStackNavigator();
 
+
+
 export default function App() {
+
 
   const [loading, setLoading] = useState(true)
   const [user, setUser] = useState(null)
@@ -63,10 +67,10 @@ export default function App() {
       <Stack.Navigator>
         { user ? (
           <>
-            <Stack.Screen name="Home">
+            <Stack.Screen name="Home" options={{ title: '' }}>
               {props => <HomeScreen {...props} extraData={user} logout={onLogoutButtonPress} />}
             </Stack.Screen>
-            <Stack.Screen name="Buisness" component={BuisnessScreen} />
+            <Stack.Screen name="Buisness" component={BuisnessScreen} options={({ route }) => ({ title: route.params.item.title })}/>
           </>
         ) : (
           <>
