@@ -49,6 +49,9 @@ export default function BuisnessScreen(props) {
                 <Text>{props.route.params.item.contact.email}</Text>
                 <Text>{props.route.params.item.contact.address}</Text>
             </View>
+            <View> 
+              <Image style={styles.image} source={{uri: props.route.params.item.map}} />
+            </View>
           </View>
       </ScrollView>
     )
